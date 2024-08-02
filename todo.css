@@ -1,189 +1,128 @@
-body{
-    margin: 0px;
+body {
+    margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #ececec;
-}
-
-#center
-{
-    /* background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
-    width: 600px;
-    margin-top: 100px;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 2px;
-    background-color:#385170 ;
-    
-}
-
-#h
-{
+    align-items: center;
+    height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    height: 50px;
-    padding-left: 165px;
-    padding-top: 25px;
-    margin-top: 40px;
+    color: #333; /* Dark grey for body text */
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+
+}
+
+#center {
+    width: 600px;
+    margin-top: 50px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: linear-gradient(to right, #a2c2e8, #d6e2e1);
+
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#h {
     font-size: 50px;
-    color: #ececec;
+    color: black; /* White for the header text */
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
 }
 
-#input
-{
-    margin-left: 170px;
-    margin-top: 70px;
-    width: 200px;
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#input, #in {
+    background-color: #f0f0f0; /* Light grey background for input fields */
+    color: #333; /* Dark grey for input text */
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px;
     border-radius: 20px;
-
-}
-#add
-{
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 1px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
-#todolist
-{
-   width: 350px;
-   margin-left: 210px;
-   height: auto;
-   color: black;    
-   /* background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+#add, #se {
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    border: 2px solid #ccc;
+    background: linear-gradient(to right, #79b3f4, #69bff8);
+    color: black; /* White text color for buttons */
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
+#add:hover, #se:hover {
+    background: linear-gradient(to right, #69bff8, #52cffe); /* Darker gradient for button hover state */
+}
 
-#header
-{
-    margin-left: 215px;
+#todolist {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff; /* White background for the to-do list */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark grey for to-do list text */
+}
+
+#header {
     font-size: 20px;
-}
-#empty
-{
-    padding-left: 40px;
-}
-p
-{
-    margin-left: 45px;
-}
-#lcount
-{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: 11px;
-margin-left: 235px;
-margin-top: 20px;
-}
-
-#in
-{
-    margin-left: 170px;
-    margin-top: 20px;
-    width: 200px;
-    border-radius: 20px;
-}
-
-#add
-{
-    border-radius: 10px;
-    font-size: 12px;
-    border-width: 2px;
-    border-color: color(srgb red green blue);
-}
-
-#se
-{
-    font-size: 12px;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-#rights
-{
-    width: 400px;
-    font-size: 15px;
-    padding-left: 110px;
-}
-
-#copy
-{
-    width: 450px;
-  margin-left: 33px;
+    text-align: center;
     margin-bottom: 20px;
+    color: black; /* White for the header text */
 }
 
-
-@media only screen and (max-width: 600px)
-{
-    body{
-     background-color: #ececec;
-    }
-    #center
-    {
-        background-color:#385170;
-        width: 500px;
-        margin-left: 115px;
-        margin-right: 0px;
-        border-width:2px ;
-      
-       
-    }
-    #h
-    {
-padding-left: 120px;
-    }
-    #input
-{
-    width: 150px;
-   margin-left:160px;
-}
-#in
-{
-    width: 150px;
-    margin-left: 160px;
-}
-#head
-{
-    margin-top: 10px;
-    width: 500px;
-    margin-left: 0px;
-}
-#header
-{
-    
-    margin-left: 190px;
+#lcount {
+    font-size: 14px;
+    text-align: center;
     margin-top: 20px;
+    color: black; /* White for the count text */
 }
 
-#todolist
-{
-    margin-left: 185px;
-}
-#lcount
-{
-    margin-left: 205px;
-}
-
-#copy
-{
-    width: 200px;
-}
-#rights
-{
-    font-size: 10px;
-    padding-left: 112   px;
-    width: 250px;
-}
-#line
-{
-    font-size: 26px;
-    padding-left: px;
+#rights, #copy {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px auto;
+    width: calc(100% - 40px);
+    color: black; /* White for the footer text */
 }
 
-
-
-
-
-    
+@media only screen and (max-width: 600px) {
+    body {
+        background: linear-gradient(to right, #d16ba9, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8); /* Ensure gradient background on smaller screens */
+    }
+    #center {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #h {
+        font-size: 40px;
+    }
+    .input-container {
+        flex-direction: column;
+    }
+    #input, #in, #add, #se, #todolist, #header, #lcount, #rights, #copy {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #add, #se {
+        width: 100%;
+        margin-top: 10px;
+    }
+    #rights {
+        font-size: 12px;
+    }
 }
-
